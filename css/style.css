@@ -4,7 +4,7 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -34,7 +34,7 @@ body {
 
 .header__content {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -65,7 +65,6 @@ body {
 
 .social {
   font-size: 5rem;
-  text-align: center;
 }
 
 .social__link:link,
@@ -91,12 +90,11 @@ body {
 }
 
 .social__icon {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  color: white;
   z-index: 1;
 }
 
@@ -132,7 +130,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #e7d533;
+  background-color: rgb(173, 226, 67);
   transform: scale(0);
   transition: all 0.3s ease-in;
 }
@@ -142,8 +140,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 2.2rem;
+  color: black;
+  font-size: 2.6rem;
   z-index: 1;
 }
 
@@ -152,3 +150,63 @@ body {
 }
 
 /* Header */
+
+/* Project */
+
+/* Project */
+
+/* Bio */
+
+.bio {
+  background-color: #05011b;
+}
+
+.bio-box {
+  padding: 5rem 4rem;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.bio-heading {
+  font-size: 4.8rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.bio-heading:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 15%;
+  height: 0.3rem;
+  background-color: yellowgreen;
+}
+
+.img {
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  margin-right: 5rem;
+}
+
+.img-content {
+  width: 26rem;
+}
+
+.bio__content {
+  font-size: 3.2rem;
+  text-align: justify;
+  font-weight: 500;
+}
+
+/* Footer */
+/* font-family: 'Qwigley', cursive; */
+
+.footer {
+  height: 50vh;
+  background-color: #05011b;
+}
+
+.footer-box {
+}
