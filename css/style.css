@@ -16,7 +16,6 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  /* padding: 0.4rem; */
   color: white;
   background-color: #05011b;
 }
@@ -25,6 +24,93 @@ body {
 .fontAcme {
   font-family: "Acme", sans-serif;
 }
+/* Navigation */
+
+.navigation {
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__btn {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  z-index: 3000;
+  cursor: pointer;
+}
+
+.navigation__icon {
+}
+.navigation__background {
+  width: 6rem;
+  height: 6rem;
+  background: rgba(153, 205, 50, 0.9);
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 2000;
+  transition: transform 0.6s;
+}
+
+.navigation__nav {
+  display: inline-block;
+  position: fixed;
+  top: 21%;
+  right: 3%;
+  z-index: 2500;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.8s ease;
+}
+
+.navigation__list {
+  text-align: left;
+  list-style: none;
+}
+
+.navigation__item {
+  margin-bottom: 0.3rem;
+}
+
+.navigation__link:link,
+.navigation__link:visited {
+  display: inline-block;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.4rem;
+  background: linear-gradient(120deg, transparent 50%, white 50%);
+  background-size: 230%;
+  transition: all 0.4s ease-in-out;
+}
+
+.navigation__link:hover,
+.navigation__link:active {
+  background-position: 100%;
+  color: yellowgreen;
+  transform: translateX(1rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(10) translate(1rem, 0.2rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  height: 100%;
+}
+
+/* Navigation */
 
 /* Header */
 
@@ -156,13 +242,32 @@ body {
 
 /* Project */
 
+.project {
+  display: none;
+}
+
+.project__box {
+}
+
+.project__title {
+}
+
+.project__vdo {
+}
+
+.project__vdo-content {
+}
+
+.project__para {
+}
+
 /* Project */
 
 /* Bio */
 
 .bio {
-  /* background-color: #05011b; */
   margin-bottom: 8rem;
+  /* height: 100vh; */
 }
 
 .bio-box {
@@ -201,13 +306,12 @@ body {
 .bio__content {
   font-size: 3.2rem;
   text-align: justify;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 /* Footer */
 
 .footer {
-  /* background-color: #05011b; */
   text-align: center;
 }
 
@@ -224,7 +328,7 @@ body {
 .footer-heading::before {
   content: "";
   display: inline-block;
-  width: 35%;
+  width: 35%; /* //////use calc here importaaaaaaaaaaaaaannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnttttttttttttttttttttttttttttttttttttttttttttt*/
   height: 0.3rem;
   background-color: yellowgreen;
   position: absolute;
@@ -250,6 +354,7 @@ body {
 }
 
 .footer__mail-para {
+  font-weight: 300;
   font-size: 2.5rem;
   margin-bottom: 5rem;
 }
@@ -286,5 +391,6 @@ body {
 
 .copyright {
   background-color: yellowgreen;
+  font-size: 2rem;
   padding: 2rem;
 }
