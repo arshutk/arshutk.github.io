@@ -24,10 +24,11 @@ body {
 
 .header {
   height: 100vh;
-  background: rgb(32, 30, 30) url("../img/hero-bg.png");
-  background-size: cover;
-  background-position: left bottom;
-  background-attachment: fixed;
+  background-image: url("../img/heroBG1.png"), url("../img/heroBG2.png");
+  background-size: 100%, cover;
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, fixed;
   position: relative;
 }
 
@@ -148,10 +149,6 @@ body {
 
 .mouse-scroll:hover .mouse-scroll__link::after {
   transform: scale(1);
-}
-
-.a {
-  height: 90vh;
 }
 
 /* Header */
