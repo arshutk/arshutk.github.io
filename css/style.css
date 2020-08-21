@@ -331,7 +331,7 @@ body {
     5px 6px 5px rgba(0, 0, 0, 1);
 }
 .project__vdo--dim {
-  width: 50%;
+  width: 56.25%;
 }
 
 .project__info {
@@ -378,6 +378,36 @@ body {
 }
 
 /* Project */
+
+/* Skill */
+
+.skill {
+  margin-bottom: 15rem;
+}
+
+.skill-heading {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.skill-heading:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 14%;
+  height: 0.3rem;
+  background-color: yellowgreen;
+}
+
+.skill__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15%;
+  margin: 0 15%;
+}
+
+/* Skill */
 
 /* Bio */
 
@@ -438,6 +468,7 @@ body {
   font-size: 7rem;
   position: relative;
   margin-bottom: 4rem;
+  z-index: 1000;
 }
 
 .footer-heading::before {
