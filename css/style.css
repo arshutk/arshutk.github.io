@@ -38,15 +38,71 @@ body {
   height: 7rem;
   border-radius: 50%;
   background-color: whitesmoke;
+  text-align: center;
   position: fixed;
   top: 6rem;
   right: 6rem;
   z-index: 3000;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .navigation__icon {
+  display: inline-block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: yellowgreen;
+  margin-top: 3.5rem;
+  position: relative;
+  transition: all 0.2s ease;
 }
+
+.navigation__icon::before {
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: yellowgreen;
+  position: absolute;
+  left: 0;
+  top: -0.8rem;
+  transition: all 0.2s ease;
+}
+
+.navigation__icon::after {
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 0.3rem;
+  background-color: yellowgreen;
+  position: absolute;
+  left: 0;
+  top: 0.8rem;
+  transition: all 0.2s ease;
+}
+
+.navigation__btn:hover .navigation__icon::after {
+  top: 1rem;
+}
+
+.navigation__btn:hover .navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__checkbox:checked ~ .navigation__btn > .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked ~ .navigation__btn > .navigation__icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked ~ .navigation__btn > .navigation__icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
 .navigation__background {
   width: 6rem;
   height: 6rem;
@@ -63,12 +119,13 @@ body {
   display: inline-block;
   position: fixed;
   top: 21%;
-  right: 3%;
+  right: 2%;
   z-index: 2500;
   opacity: 0;
   height: 0;
   overflow: hidden;
   transition: all 0.8s ease;
+  padding: 0.8rem;
 }
 
 .navigation__list {
@@ -98,11 +155,11 @@ body {
 .navigation__link:active {
   background-position: 100%;
   color: yellowgreen;
-  transform: translateX(1rem);
+  transform: translateX(0.8rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__background {
-  transform: scale(10) translate(1rem, 0.2rem);
+  transform: scale(10) translate(1rem, 0.1rem);
 }
 
 .navigation__checkbox:checked ~ .navigation__nav {
@@ -244,21 +301,57 @@ body {
 
 .project {
   display: none;
+  margin-bottom: 8rem;
+}
+
+.project__section-heading {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.project__section-heading:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  width: 26%;
+  height: 0.3rem;
+  background-color: yellowgreen;
 }
 
 .project__box {
+  /* background-color: lavenderblush; */
+  /*color: lawngreen; */
+  text-align: center;
+}
+
+.project__vdo {
+  border-radius: 1rem;
+  /* box-shadow: 1rem 0.8rem 1rem yellowgreen; */
+  display: inline-block;
+}
+.project__vdo--dim {
+  width: 29%;
+}
+
+.project__info {
+  display: inline-block;
+  /* background-color: red; */
+  height: 100%;
+  text-align: right;
 }
 
 .project__title {
 }
 
-.project__vdo {
-}
-
-.project__vdo-content {
-}
-
 .project__para {
+  display: inline-block;
+}
+
+.project__tech {
+}
+
+.project__tech-items {
 }
 
 /* Project */
@@ -267,7 +360,6 @@ body {
 
 .bio {
   margin-bottom: 8rem;
-  /* height: 100vh; */
 }
 
 .bio-box {
@@ -279,7 +371,7 @@ body {
 .bio-heading {
   font-size: 5rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
 }
 
 .bio-heading:after {
@@ -392,5 +484,6 @@ body {
 .copyright {
   background-color: yellowgreen;
   font-size: 2rem;
+  font-weight: 500;
   padding: 2rem;
 }

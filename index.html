@@ -23,6 +23,33 @@
     rel="stylesheet"
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" id="checkbox" class="navigation__checkbox" />
+      <label for="checkbox" class="navigation__btn">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#header" class="navigation__link">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#project" class="navigation__link">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#skill" class="navigation__link">Skills</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#bio" class="navigation__link">About</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#footer" class="navigation__link">Email</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header" id="header">
       <div class="header__content">
         <div class="text-box">
@@ -53,26 +80,29 @@
     </header>
 
     <section class="project" id="project">
+      <h1 class="project__section-heading fontAcme">Some Of My Work.</h1>
       <div class="project__box">
-        <p class="project__title">Sorting Visualiser</p>
-        <video class="project__vdo" autoplay muted loop>
-          <source
-            src="./media/snippet.mp4"
-            type="video/mp4"
-            class="project__vdo-content"
-          />
+        <video class="project__vdo project__vdo--dim" autoplay muted loop>
+          <source src="./media/snippet.mp4" type="video/mp4" />
           Your browser doesn't support video!
         </video>
-        <p class="project__para">
-          Built with Python Currently implemented Binary, Linear, Selection,
-          Merge and Insertion Sort.
-        </p>
+        <div class="project__info">
+          <h2 class="project__title">Sorting Visualiser</h2>
+          <p class="project__para">
+            Currently implemented Binary, Linear, Selection, Merge and Insertion
+            Sort.
+          </p>
+          <ul class="project__tech">
+            <li class="project__tech-item">Python</li>
+            <li class="project__tech-item">Tkinter</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <section class="bio" id="bio">
+      <h1 class="bio-heading fontAcme">About Me.</h1>
       <div class="bio-box">
-        <h2 class="bio-heading fontAcme">About Me.</h2>
         <div class="img">
           <img src="./img/pic.jpg" alt="Profile Pic" class="img-content" />
         </div>
@@ -91,38 +121,13 @@
       <div class="footer-content">
         <h3 class="footer-heading">&lt; Utkarsh / &gt;</h3>
         <div class="footer__mail-box">
-          <p class="footer__mail-para">Drop me a mail at &#128071;</p>
+          <p class="footer__mail-para">
+            Drop me a mail at &#128071;
+          </p>
           <a href="mailto:karshxp@gmail.com" class="footer__link">Click Here</a>
         </div>
       </div>
       <p class="copyright">&#169; Utkarsh Patel</p>
     </footer>
-
-    <div class="navigation">
-      <input type="checkbox" id="checkbox" class="navigation__checkbox" />
-      <label for="checkbox" class="navigation__btn">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#header" class="navigation__link">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#project" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#skill" class="navigation__link">Skills</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#bio" class="navigation__link">About</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#footer" class="navigation__link">Email</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
   </body>
 </html>
