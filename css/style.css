@@ -21,9 +21,24 @@ body {
 }
 
 /* Utility */
-.fontAcme {
+.font-acme {
   font-family: "Acme", sans-serif;
 }
+
+.margin-bottom-small {
+  margin-bottom: 3rem;
+}
+.margin-bottom-medium {
+  margin-bottom: 6rem;
+}
+.margin-bottom-large {
+  margin-bottom: 9rem;
+}
+
+.margin-bottom-section {
+  margin-bottom: 20rem;
+}
+
 /* Navigation */
 
 .navigation {
@@ -118,8 +133,8 @@ body {
 .navigation__nav {
   display: inline-block;
   position: fixed;
-  top: 21%;
-  right: 2%;
+  top: 19%;
+  right: 1.5%;
   z-index: 2500;
   opacity: 0;
   height: 0;
@@ -173,13 +188,13 @@ body {
 
 .header {
   height: 100vh;
+  margin-bottom: 15rem;
   background-image: url("../img/heroBG1.png"), url("../img/heroBG2.png");
   background-size: 100%, cover;
   background-position: right bottom, left top;
   background-repeat: no-repeat, no-repeat;
   background-attachment: scroll, fixed;
   position: relative;
-  margin-bottom: 8rem;
 }
 
 .header__content {
@@ -191,7 +206,6 @@ body {
 }
 
 .text-box {
-  font-family: "Acme", sans-serif;
   text-transform: uppercase;
   line-height: 8rem;
   margin-bottom: 5rem;
@@ -300,13 +314,11 @@ body {
 /* Project */
 
 .project {
-  margin-bottom: 10rem;
   text-align: center;
 }
 
 .project__section-heading {
   font-size: 5rem;
-  margin-bottom: 10rem;
 }
 
 .project__section-heading:after {
@@ -314,7 +326,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 5.6em;
-  height: 0.3rem;
+  height: 0.25rem;
   background-color: yellowgreen;
 }
 
@@ -331,7 +343,7 @@ body {
     5px 6px 5px rgba(0, 0, 0, 1);
 }
 .project__vdo--dim {
-  width: 25em;
+  width: 26em;
 }
 
 .project__info {
@@ -343,12 +355,16 @@ body {
 .project__title {
   display: inline-block;
   font-size: 3.4rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.project__title i {
   background: linear-gradient(120deg, rgb(219, 219, 20), yellowgreen);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  font-weight: 600;
 }
 
 .project__para {
@@ -358,6 +374,10 @@ body {
 
 .project__para span {
   display: block;
+}
+
+.project__para span i {
+  color: yellowgreen;
 }
 
 .project__btn:link,
@@ -382,13 +402,12 @@ body {
 /* Skill */
 
 .skill {
-  margin-bottom: 15rem;
+  margin-bottom: 30rem;
 }
 
 .skill-heading {
   font-size: 5rem;
   text-align: center;
-  margin-bottom: 8rem;
 }
 
 .skill-heading:after {
@@ -396,14 +415,14 @@ body {
   display: block;
   margin: 0 auto;
   width: 4em;
-  height: 0.3rem;
+  height: 0.25rem;
   background-color: yellowgreen;
 }
 
 .skill__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15%;
+  gap: 17%;
   margin: 0 15%;
 }
 
@@ -412,7 +431,6 @@ body {
 /* Bio */
 
 .bio {
-  margin-bottom: 8rem;
 }
 
 .bio-box {
@@ -424,7 +442,6 @@ body {
 .bio-heading {
   font-size: 5rem;
   text-align: center;
-  margin-bottom: 8rem;
 }
 
 .bio-heading:after {
@@ -432,7 +449,7 @@ body {
   display: block;
   margin: 0 auto;
   width: 4.5em;
-  height: 0.3rem;
+  height: 0.25rem;
   background-color: yellowgreen;
 }
 
@@ -467,14 +484,12 @@ body {
   font-family: "Ruthie", cursive;
   font-size: 7rem;
   position: relative;
-  margin-bottom: 4rem;
-  z-index: 1000;
 }
 
 .footer-heading::before {
   content: "";
   display: inline-block;
-  width: 36vw;
+  width: 8em;
   height: 0.3rem;
   background-color: yellowgreen;
   position: absolute;
@@ -485,7 +500,7 @@ body {
 .footer-heading::after {
   content: "";
   display: inline-block;
-  width: 36vw;
+  width: 8em;
   height: 0.3rem;
   background-color: yellowgreen;
   position: absolute;
@@ -540,4 +555,18 @@ body {
   font-size: 2rem;
   font-weight: 500;
   padding: 2rem;
+  margin-top: 4rem;
 }
+
+/* Footer */
+
+/* hr */
+
+hr {
+  margin: 0 auto;
+  border: dotted rgba(153, 205, 50, 0.8) 10px;
+  border-bottom: 0;
+  width: 7rem;
+}
+
+/* hr */
