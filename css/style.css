@@ -313,7 +313,7 @@ body {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 19%;
+  width: 5.6em;
   height: 0.3rem;
   background-color: yellowgreen;
 }
@@ -331,7 +331,7 @@ body {
     5px 6px 5px rgba(0, 0, 0, 1);
 }
 .project__vdo--dim {
-  width: 56.25%;
+  width: 25em;
 }
 
 .project__info {
@@ -345,7 +345,7 @@ body {
   font-size: 3.4rem;
   font-weight: 500;
   margin-bottom: 1.2rem;
-  background: linear-gradient(120deg, yellow, yellowgreen);
+  background: linear-gradient(120deg, rgb(219, 219, 20), yellowgreen);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -395,7 +395,7 @@ body {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 14%;
+  width: 4em;
   height: 0.3rem;
   background-color: yellowgreen;
 }
@@ -431,7 +431,7 @@ body {
   content: "";
   display: block;
   margin: 0 auto;
-  width: 15%;
+  width: 4.5em;
   height: 0.3rem;
   background-color: yellowgreen;
 }
@@ -474,7 +474,7 @@ body {
 .footer-heading::before {
   content: "";
   display: inline-block;
-  width: 35%; /* //////use calc here importaaaaaaaaaaaaaannnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnttttttttttttttttttttttttttttttttttttttttttttt*/
+  width: 36vw;
   height: 0.3rem;
   background-color: yellowgreen;
   position: absolute;
@@ -485,7 +485,7 @@ body {
 .footer-heading::after {
   content: "";
   display: inline-block;
-  width: 35%;
+  width: 36vw;
   height: 0.3rem;
   background-color: yellowgreen;
   position: absolute;
