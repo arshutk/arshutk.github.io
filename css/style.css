@@ -9,6 +9,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 @media (max-width: 1200px) {
   html {
@@ -593,7 +594,6 @@ body {
 }
 
 .project__title {
-  /* display: inline-block; */
   font-size: 3.4rem;
   font-weight: 400;
   margin-bottom: 2rem;
@@ -758,11 +758,7 @@ body {
   hyphens: auto;
   font-weight: 300;
 }
-@media (max-width: 700px) {
-  .bio-content {
-    text-align: center;
-  }
-}
+
 /* Footer */
 
 .footer {
@@ -942,32 +938,11 @@ hr {
 }
 
 /* hr */
-/* @media (max-width: 37.5em) {
-  
-}
+
+/*
 0-600px    : Phone
 600-900px  : Tablet Portrait
 900-1200px : Tablet Landscape
 1200-1800px where our normal styles apply
-1800px     : Big Desktop */
-
-/* @media (max-width: 900px) {
-  html {
-    font-size: 53.9%;
-  }
-} */
-/*
-@media (max-width: 780px) {
-  .project__vdo--dim {
-    width: 24.2em;
-  }
-}
-@media (max-width: 680px) {
-  .project__vdo--dim {
-    width: 80%;
-  }
-} */
-/* @media (max-width: 37.5em) {
-}
-@media (max-width: 37.5em) {
-} */
+1800px     : Big Desktop 
+*/
